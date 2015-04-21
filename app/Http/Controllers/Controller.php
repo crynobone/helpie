@@ -1,4 +1,4 @@
-<?php namespace App\Http\Controllers;
+<?php namespace Helpie\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesCommands;
 use Orchestra\Routing\Controller as BaseController;

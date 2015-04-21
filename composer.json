@@ -16,7 +16,7 @@
 			"resources/database"
 		],
 		"psr-4": {
-			"App\\": "app/"
+			"Helpie\\": "app/"
 		}
 	},
 	"autoload-dev": {

@@ -11,7 +11,7 @@
 |
 */
 
-$app = new Orchestra\Foundation\Application(realpath(__DIR__.'/..'));
+$app = new Helpie\Foundation\Application(realpath(__DIR__.'/..'));
 
 /*
 |--------------------------------------------------------------------------
@@ -26,17 +26,17 @@ $app = new Orchestra\Foundation\Application(realpath(__DIR__.'/..'));
 
 $app->singleton(
     'Illuminate\Contracts\Http\Kernel',
-    'App\Http\Kernel'
+    'Helpie\Http\Kernel'
 );
 
 $app->singleton(
     'Illuminate\Contracts\Console\Kernel',
-    'App\Console\Kernel'
+    'Helpie\Console\Kernel'
 );
 
 $app->singleton(
     'Illuminate\Contracts\Debug\ExceptionHandler',
-    'App\Exceptions\Handler'
+    'Helpie\Exceptions\Handler'
 );
 
 /*
