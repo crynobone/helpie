@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a40df1542b6b6f21dca97dcc9cc3dd02",
+    "hash": "97a04dafa08cd9bb35cf8d9f0ff1b5cf",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1216,59 +1216,6 @@
                 "table"
             ],
             "time": "2015-02-05 05:41:09"
-        },
-        {
-            "name": "orchestra/installer",
-            "version": "v3.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/orchestral/installer.git",
-                "reference": "7344d16c6377a47b6786629e3be3d46f6a896301"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/installer/zipball/7344d16c6377a47b6786629e3be3d46f6a896301",
-                "reference": "7344d16c6377a47b6786629e3be3d46f6a896301",
-                "shasum": ""
-            },
-            "require": {
-                "orchestra/foundation": "3.0.*",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "0.9.*",
-                "orchestra/testing": "3.0.*"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Orchestra\\Installation\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mior Muhammad Zaki",
-                    "email": "crynobone@gmail.com",
-                    "homepage": "https://github.com/crynobone"
-                }
-            ],
-            "description": "Orchestra Platform Installer",
-            "homepage": "http://orchestraplatform.com/docs/latest/",
-            "keywords": [
-                "installer",
-                "orchestra-platform",
-                "orchestral"
-            ],
-            "time": "2015-03-10 08:49:43"
         },
         {
             "name": "orchestra/kernel",
@@ -2965,6 +2912,59 @@
                 "instantiate"
             ],
             "time": "2014-10-13 12:58:55"
+        },
+        {
+            "name": "orchestra/installer",
+            "version": "v3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orchestral/installer.git",
+                "reference": "7344d16c6377a47b6786629e3be3d46f6a896301"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orchestral/installer/zipball/7344d16c6377a47b6786629e3be3d46f6a896301",
+                "reference": "7344d16c6377a47b6786629e3be3d46f6a896301",
+                "shasum": ""
+            },
+            "require": {
+                "orchestra/foundation": "3.0.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "orchestra/testing": "3.0.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Orchestra\\Installation\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mior Muhammad Zaki",
+                    "email": "crynobone@gmail.com",
+                    "homepage": "https://github.com/crynobone"
+                }
+            ],
+            "description": "Orchestra Platform Installer",
+            "homepage": "http://orchestraplatform.com/docs/latest/",
+            "keywords": [
+                "installer",
+                "orchestra-platform",
+                "orchestral"
+            ],
+            "time": "2015-03-10 08:49:43"
         },
         {
             "name": "orchestra/testbench",
