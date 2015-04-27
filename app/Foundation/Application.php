@@ -4,5 +4,5 @@ use Orchestra\Foundation\Application as BaseApplication;
 
 class Application extends BaseApplication
 {
-
+    //
 }
