@@ -14,13 +14,17 @@ class CreateActionsTable extends Migration
         Schema::create('actions', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('case_id')->index();
-            $table->unsignedInteger('user_id')->index();
-            $table->morphs('stream');
+            $table->unsignedInteger('user_id')->nullable()->index();
 
-            $table->string('name');
+            $this->unsignedBigInteger('stream_id');
+            $this->string('stream_type');
+
+            $table->string('code')->nullable();
 
             $table->timestamps();
             $table->softDeletes();
+
+            $this->index(['stream_id', 'stream_type']);
         });
     }
 

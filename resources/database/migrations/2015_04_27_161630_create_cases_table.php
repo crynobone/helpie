@@ -13,12 +13,16 @@ class CreateCasesTable extends Migration
     {
         Schema::create('cases', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedInteger('user_id')->index();
-            $table->unsignedInteger('category_id')->index();
+            $table->unsignedInteger('user_id')->nullable()->index();
+            $table->unsignedInteger('assignee_id')->nullable()->index();
+            $table->unsignedInteger('category_id')->nullable()->index();
 
             $table->string('title');
             $table->text('content');
-            $table->json('meta');
+
+            $table->string('token')->nullable();
+            $table->json('meta')->nullable();
+            $table->smallInteger('status')->default(0);
 
             $table->timestamps();
             $table->softDeletes();
