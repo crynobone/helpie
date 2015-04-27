@@ -4,21 +4,20 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCasesTable extends Migration
+class CreateActionsTable extends Migration
 {
     /**
      * Run the migrations.
      */
     public function up()
     {
-        Schema::create('cases', function (Blueprint $table) {
+        Schema::create('actions', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('case_id')->index();
             $table->unsignedInteger('user_id')->index();
-            $table->unsignedInteger('category_id')->index();
+            $table->morphs('stream');
 
-            $table->string('title');
-            $table->text('content');
-            $table->json('meta');
+            $table->string('name');
 
             $table->timestamps();
             $table->softDeletes();
@@ -30,6 +29,6 @@ class CreateCasesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('cases');
+        Schema::drop('actions');
     }
 }

@@ -3,11 +3,11 @@
 	"type": "project",
 	"require": {
 		"orchestra/foundation": "^3.0.11",
-		"orchestra/control": "~3.0"
+		"orchestra/control": "*"
 	},
 	"require-dev": {
-		"orchestra/testing": "~3.0",
-		"orchestra/installer": "~3.0",
+		"orchestra/testing": "*",
+		"orchestra/installer": "*",
 		"phpunit/phpunit": "~4.0",
 		"phpspec/phpspec": "~2.1"
 	},
