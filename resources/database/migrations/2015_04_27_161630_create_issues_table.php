@@ -11,7 +11,7 @@ class CreateCasesTable extends Migration
      */
     public function up()
     {
-        Schema::create('cases', function (Blueprint $table) {
+        Schema::create('issues', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedInteger('user_id')->nullable()->index();
             $table->unsignedInteger('assignee_id')->nullable()->index();
@@ -22,7 +22,7 @@ class CreateCasesTable extends Migration
 
             $table->string('token')->nullable();
             $table->json('meta')->nullable();
-            $table->smallInteger('status')->default(0);
+            $table->string('status')->default(0);
 
             $table->timestamps();
             $table->softDeletes();

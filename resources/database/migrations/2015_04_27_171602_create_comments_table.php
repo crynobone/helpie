@@ -4,26 +4,21 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateActionsTable extends Migration
+class CreateCommentsTable extends Migration
 {
     /**
      * Run the migrations.
      */
     public function up()
     {
-        Schema::create('actions', function (Blueprint $table) {
+        Schema::create('comments', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('issue_id')->index();
+            $table->unsignedInteger('user_id')->nullable()->index();
 
-            $this->unsignedBigInteger('stream_id');
-            $this->string('stream_type');
-
-            $table->string('code')->nullable();
+            $table->longText('content');
 
             $table->timestamps();
             $table->softDeletes();
-
-            $this->index(['stream_id', 'stream_type']);
         });
     }
 
@@ -32,6 +27,6 @@ class CreateActionsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('actions');
+        Schema::drop('comments');
     }
 }

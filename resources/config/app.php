@@ -158,16 +158,15 @@ return [
         /*
          * Orchestra Platform Optional Service Providers...
          */
+        'Orchestra\Avatar\AvatarServiceProvider',
+        'Orchestra\Http\HashIdServiceProvider',
         'Orchestra\Installation\InstallerServiceProvider',
 
         /*
          * Application Service Providers...
          */
         'Helpie\Providers\AppServiceProvider',
-        'Helpie\Providers\BusServiceProvider',
-        'Helpie\Providers\ConfigServiceProvider',
         'Helpie\Providers\EventServiceProvider',
-        'Helpie\Providers\ExtensionServiceProvider',
         'Helpie\Providers\RouteServiceProvider',
     ],
 
